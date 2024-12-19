@@ -1,1 +1,383 @@
 /* Reset */
+* {
+    font-family: "kanit", Arial, Helvetica, sans-serif;
+}
+
+/* Responsive UI */ /*Ka mohon maaf ini responsive UI nya kok ada yang ke-apply ada yang engga yaa, pas di-inspect ternyata ruleset di media query-nya itu dicoret*/
+@media only screen and (max-width: 600px) {
+    .title-display {
+        background-color: white;
+        margin: 0;
+        padding: 14px 10px 38px;
+        border-radius: 5PX;
+    }
+
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-icon > img {
+        width: 54px;
+        height: 54px;
+    }
+
+    .header-content > h1 {
+        font-family: "kanit", arial;
+        color: #38393a;
+        margin: 50px 0 0;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .main-content {
+        display: flex;
+        padding: 24px 0 15px;
+        flex-direction: column;
+    }
+
+    .img-caption > img {
+        display: flex;
+        border-radius: 3px;
+        width: auto;
+        height: auto;
+    }
+
+    .place {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .closing-argument > h2 {
+        margin: 104px 0 4px;
+        text-align: center;
+    }
+
+    .table-row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* Body of Page */
+body {
+    background-color: #dddddd;
+}
+
+/* Body of First Content */
+.title-display {
+    background-color: white;
+    margin: 24px 24px/*240px*/ 24px;
+    padding: 24px 40px 38px;
+    border-radius: 5PX;
+}
+
+/* the First Content */
+.main-header {
+    display: flex;
+    align-items: center;
+}
+
+.home-icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-right: auto
+}
+
+.home-icon > img {
+    border-radius: 50%;
+}
+
+.navigations {
+    display: flex;
+    margin: 0;
+    padding: 2px 10px;
+}
+
+.navigations > a {
+    color: #38393a;
+    text-decoration: none;
+    font-family: "kanit", arial;
+}
+
+.navigations > a:hover {
+    color: #38393a;
+    text-shadow: 0 0 10px #123456;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content > h1 {
+    font-family: "kanit", arial;
+    color: #38393a;
+    margin: 50px 0 0;
+}
+
+.header-content > p {
+    font-family: "kanit", arial;
+    color: #38393a;
+    margin: 14px 0 44px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    padding: 24px 0 15px;
+}
+
+.img-slider {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+/* Banner */
+.img-caption > img {
+    display: flex;
+    border-radius: 3px;
+    width: 260px;
+}
+
+.img-caption {
+    margin: 0;
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0 0 0;
+    line-height: 18px;
+    font-style: italic;
+    color: #696969;
+}
+
+/* Testimoni */
+.testimoni {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimoni > img {
+    width: 34px;
+    height: 34px;
+    background-color: #123456;
+    border-radius: 50%;
+    padding: 4px;
+    margin: 10px;
+}
+
+table, tr, td {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+.profession {
+    font-size: smaller;
+    font-weight: 350;
+    font-style: italic;
+}
+
+/* Form */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8eaec;
+    border-radius: 3px;
+    flex: 1;
+    padding: 24px;
+}
+
+.form-field > h6 {
+    font-family: "kanit", arial;
+    font-size: large;
+    margin: 0;
+}
+
+.form-field > p {
+    margin: 2px 0 40px;
+    font-size: small;
+    line-height: 18px;
+}
+
+
+/* Validasi Form */
+#error-name, #error-email {
+    color: red;
+    font-weight: 300;
+    font-size: x-small;
+    margin: 0;
+    padding: 0;
+}
+
+/* Formulir, Label & Input Field */
+label {
+    font-size: small;
+    font-weight: bold;
+    margin: 10px 0 3px;
+}
+
+.input-field {
+    padding: 8px;
+    margin: 0;
+    border-radius: 3px;
+    border: none;
+}
+
+.submit {
+    padding: 8px;
+    margin: 10px 0 10px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #123456;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+/* Additional Content */
+.statement > h4 {
+    margin: 0;
+    padding: 0 30% 12px 0;
+    font-size: small;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.point {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 4px 0;
+    padding: 0;
+}
+
+.point > h5 {
+    margin: 0;
+    padding: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: #123456;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.point > p {
+    margin: 0 0 0 18px;
+    padding: 0;
+    font-size: small;
+    color: #898e93;
+}
+
+/* Our Package */
+#our-package {
+    display: flex;
+    justify-content: center;
+}
+
+/* Package Display */
+.package-display {
+    background-color: white;
+    margin: 24px 24px/*240px*/ 24px;
+    padding: 24px 40px 38px;
+    border-radius: 5PX;
+}
+
+.table-row {
+    display: flex;
+}
+
+.place {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+table {
+    display: flex;
+    margin: 24px 0 12px 0;
+}
+
+.place > table, th, tr, td {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+th > img {
+    width: 24px;
+    height: 24px;
+    background-color: #123456;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 4px 0 0;
+}
+
+.place-desc > td {
+    padding: 0 14px 0 41px;
+    line-height: 18px;
+    font-size: small;
+}
+
+/* Closing  Argument*/
+.closing-argument {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.closing-argument > h2 {
+    margin: 104px 0 4px;
+}
+
+.closing-argument > p {
+    text-align: center;
+    padding: 0 16%;
+    line-height: 18px;
+    font-size: small;
+}
+
+.closing-argument > button {
+    margin: 24px 0 24px;
+    padding: 8px 38px;
+    background-color: #123456;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 68px 0 0;
+}
+
+.footer > img {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 0 0 14px;
+}
+
+.footer > p {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}

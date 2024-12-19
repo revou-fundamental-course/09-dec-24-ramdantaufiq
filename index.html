@@ -4,9 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Mini Project | First Assignment</title>
 </head>
 <body>
-    
+    <!--For Better Interface-->
+    <Section class="title-display">
+        <!---->
+        <!--Main Header-->
+        <header class="main-header">
+            <!--Profile Icon-->
+            <div class="home-icon">
+                <img src="assets\catspider.jpg" alt="spider cat img">
+            </div>
+
+            <!--Navigations-->
+            <nav class="navigations"><a href="#home">Home</a></nav>
+            <nav class="navigations"><a href="#our-package">Our Package</a></nav>
+            <nav class="navigations"><a href="#call-us">Call Us</a></nav>            
+        </header>    
+
+        <div class="header-content" id="home">
+            <h1>Top Rated Tourist Attraction In Indonesia</h1>
+            <p>Every Day with best experiences</p>
+        </div>
+
+        <!--Main Content-->
+        <main class="main-content">
+            <aside class="img-slider">
+                <figure class="img-caption">
+                    <img class="banner-img first-banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRnrhiTTbwe28dPrBXjW0rujAdSAygleUdTw&s" alt="street with the mountain">
+                    <img class="banner-img second-banner" src="https://c4.wallpaperflare.com/wallpaper/1000/732/59/spring-8k-uhd-8k-asia-wallpaper-preview.jpg" alt="street with the mountain">
+                    <img class="banner-img third-banner" src="https://c4.wallpaperflare.com/wallpaper/156/586/511/tower-city-tourist-attraction-tower-block-wallpaper-preview.jpg" alt="street with the mountain">
+                    <figcaption>"setiap hari healing ke sini"</figcaption>
+
+                    <div class="testimoni">
+                        <img src="assets\person_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="profile person"></th>
+                        <table>
+                            <tr>
+                                <td>Antonella Rocuzzo</td>
+                            </tr>
+                            <tr>
+                                <td class="profession">Housewife, 36</td>
+                            </tr>
+                        </table>
+                    </div>
+                </figure><br>
+            </aside>
+
+            <!--Form Section-->
+            <form class="form-field">
+                <h6>Contact Us</h6>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+
+                <!--Your Name-->
+                <label for="your-name">Your Name:</label> 
+                <input class="input-field" type="text" id="your-name" placeholder="Your name">
+                <p id="error-name"></p>
+
+                <!--Your Email-->
+                <label for="email">Email Address:</label>
+                <input class="input-field" type="email" id="your-email" placeholder="Email Address">
+                <p id="error-email"></p>
+
+                <!--Your Option-->
+                <label for="your-option">What are you interested in?</label>
+                <select class="input-field" name="your-option" id="your-option">
+                    <option value="a">Sport</option>
+                    <option value="b">Destination</option>
+                    <option value="c">Culinary</option>
+
+                </select>
+
+                <!--Submission-->
+                <button class="submit" type="button" id="send">SEND</button>
+            </form>
+        </main>
+
+        <!--Additional Content-->
+        <div class="statement">
+            <h4>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</h4>
+        </div> 
+        <div class="point">
+            <h5>1</h5>
+            <p>Your first feature, written in the form of a benefit statement.</p>
+        </div>
+        <div class="point">
+            <h5>2</h5>
+            <p>Your second feature, written in the form of a benefit statement.</p>
+        </div>
+        <div class="point">
+            <h5>3</h5>
+            <p>Your third feature, written in the form of a benefit statement.</p>
+        </div>
+    </Section>
+
+    <!--Our Package-->
+    <div id="our-package">
+        <h2>Our Package</h2>
+    </div>
+
+    <!--Package Display & Footer-->
+    <section class="package-display">
+        <div class="table-row">
+            <div class="place">
+                <table>
+                    <tr>
+                        <th><img src="assets\location.png" alt="location icon"></th>
+                        <th>Bali</th>
+                    </tr>
+                    <tr class="place-desc">
+                        <td>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th><img src="assets\location.png" alt="location icon"></th>
+                        <th>Barcelona</th>
+                    </tr>
+                    <tr class="place-desc">
+                        <td>Travel dan wisata di Barcelona. Kunjungi cagar budaya dan kuliner yang menarik</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th><img src="assets\location.png" alt="location icon"></th>
+                        <th>Tokyo</th>
+                    </tr>
+                    <tr class="place-desc">
+                        <td>Travel dan wisata di Tokyo. Kunjungi cagar budaya dan kuliner yang menarik</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="place">
+                <table>
+                    <tr>
+                        <th><img src="assets\location.png" alt="location icon"></th>
+                        <th>Bandung</th>
+                    </tr>
+                    <tr class="place-desc">
+                        <td>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th><img src="assets\location.png" alt="location icon"></th>
+                        <th>Purwakarta</th>
+                    </tr>
+                    <tr class="place-desc">
+                        <td>Travel dan wisata di Purwakarta. Kunjungi cagar budaya dan kuliner yang menarik</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th><img src="assets\location.png" alt="location icon"></th>
+                        <th>Surabaya</th>
+                    </tr>
+                    <tr class="place-desc">
+                        <td>Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--Closing Argument-->
+        <div class="closing-argument">
+            <h2>Your Closing Argument Headline</h2>
+            <p>Ini adalah hasil latihan membuat website, tentunya jauh dari kata sempurna. Akan tetapi, saya berharap ke depannya akan jauh lebih baik lagi.</p>
+            <button id="call-us">CALL TO ACTION</button>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <img src="assets\catspider.jpg" alt="spider cat">
+            <p >Terms of Service | Privacy Policy</p>
+            <p>© 2024 | Rhamdan Taufiq Alhakim</p>
+        </footer>
+    </section>
+
+    <!--Javascript-->
+    <script src="js\script.js"></script>
 </body>
 </html>
